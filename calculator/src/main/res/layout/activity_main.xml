@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/activity_main__editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number1"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+
+        />
+    <EditText
+        android:id="@+id/activity_main__editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter number1"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!--계산기 버튼 -->
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#f6d9fc"
+        android:layout_marginRight="5dp"
+        android:onClick="btnAddClicked"
+        android:text="더하기" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#f6d9fc"
+        android:layout_marginRight="5dp"
+        android:onClick="btnMinusClicked"
+        android:text="빼기" />-->
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#f6d9fc"
+        android:layout_marginRight="5dp"
+        android:onClick="btnMultiplyClicked"
+        android:text="곱하기" />
+
+    <Button
+        android:id="@+id/divideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#f6d9fc"
+        android:layout_marginRight="5dp"
+        android:onClick="btnDivideClicked"
+        android:text="나누기" />-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="50dp"
+        android:onClick="btnClearClicked"
+        />
+    "
+
+    <TextView
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/activity_main_textViewRs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
