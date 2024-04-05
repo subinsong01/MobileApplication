@@ -17,3 +17,4 @@ rootProject.name = "4_02(1)"
 include(":app")
 include(":dicegame")
 include(":calculator")
+include(":rollingdicehw")
