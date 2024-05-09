@@ -5,41 +5,34 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/companylogo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 정보"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/nnn"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/emailEditText"
-        android:hint="이메일"
-        android:inputType="textEmailAddress" />
-    <EditText
+        android:id="@+id/displayIdTextView"
+        android:text="아이디 : " />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/passwordEditText"
-        android:hint="비밀번호"
-        android:inputType="textPassword" />
+        android:id="@+id/displayPasswordTextView"
+        android:text="비밀번호 : " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginSuccess"
+        android:text="로그인 인증 중 " />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton"
-        android:text="로그인"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/forgotPasswordTextView"
-        android:text="비밀번호를 잊으셨나요?"
-        android:layout_marginBottom="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/registerTextView"
-        android:text="계정이 없으신가요?  > 회원가입 페이지로 가기 " />
+        android:id="@+id/loginCheckButton"
+        android:text="인증시도버튼" />
 
 </LinearLayout>

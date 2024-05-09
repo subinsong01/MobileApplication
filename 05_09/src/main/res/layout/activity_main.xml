@@ -2,20 +2,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/black"
-    android:orientation="vertical">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/img"/>
+    android:orientation="vertical"
+    android:gravity="center">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="60sp"
-        android:text="Hello World !"
-        android:textColor="@color/white"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/chunsik" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailEditText"
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEditText"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:backgroundTint="#213c"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPasswordTextView"
+        android:text="비밀번호를 잊으셨나요?" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerTextView"
+        android:text="계정이 없으신가요?  > 회원가입 " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginStatus"
+        android:text="로그인 진행중"
         android:layout_marginTop="20dp"/>
+
 </LinearLayout>
